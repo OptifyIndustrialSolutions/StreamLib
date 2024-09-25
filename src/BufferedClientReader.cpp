@@ -96,5 +96,5 @@ void BufferedClientReader::flush() {
 }
 
 int BufferedClientReader::availableForWrite() {
-  return client.availableForWrite();
+  // return client.availableForWrite();
 }

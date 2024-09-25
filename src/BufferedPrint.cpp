@@ -63,11 +63,11 @@ void BufferedPrint::flush() {
 }
 
 int BufferedPrint::availableForWrite() {
-  int a = target.availableForWrite();
-  if (!a) // target doesn't report aFW or is really full
-    return size - pos; // then return space left in our buffer
-  a = a - pos; // what will be left in target after our flush()
-  return a < 0 ? 0 : a;
+  // int a = target.availableForWrite();
+  // if (!a) // target doesn't report aFW or is really full
+  //   return size - pos; // then return space left in our buffer
+  // a = a - pos; // what will be left in target after our flush()
+  // return a < 0 ? 0 : a;
 }
 
 
